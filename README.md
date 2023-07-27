@@ -32,6 +32,7 @@ Before installation make sure you have python3 & pip installed on your system. I
 1. https://www.python.org/downloads/
 2. https://pip.pypa.io/en/stable/installation/
 
+### For linux based system
 In Terminal 1:
 
 ```
@@ -51,6 +52,27 @@ $ npm start
 
 > **Note:** Without installing the **Dependencies**, the application will not behave as intended.
 
+### For Windows
+In Terminal 1:
+
+```
+> pip install -r requirements_windows.txt
+> cd backend
+> python3 main.py
+```
+> Optionally, execute **execute_fastapi.bat** to achieve the same.
+
+> **Note:** Since uvloops are not supported in windows, we need a different requirements file **requirements_windows.txt** to achieve the same result.
+
+In Terminal 2:
+```
+> cd frontend/asa-change-monitor
+> npm install
+> npm start
+```
+> Optionally, execute **execute_react.bat** to achieve the same.
+
+> **Note:** Without installing the **Dependencies**, the application will not behave as intended.
 
 # File Structure
 ```
@@ -83,5 +105,11 @@ $ npm start
 │           ├── logo.svg
 │           ├── reportWebVitals.js
 │           └── setupTests.js
-└── requirements.txt
+├── requirements.txt
+├── requirements_windows.txt
+├── execute_fastapi.sh
+├── execute_fastapi.bat
+├── execute_react.sh
+└── execute_react.bat
+
 ```
